@@ -7,6 +7,7 @@ ADD https://github.com/spiffe/spire/releases/download/v1.2.2/spire-1.2.2-linux-x
 RUN tar xzvf spire-1.2.2-linux-x86_64-glibc.tar.gz -C /bin --strip=2 spire-1.2.2/bin/spire-server spire-1.2.2/bin/spire-agent
 
 FROM go as build
+COPY ./build-tmp/sdk/ /sdk
 WORKDIR /build
 COPY go.mod go.sum ./
 COPY internal ./internal

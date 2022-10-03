@@ -1,3 +1,13 @@
+# Acnodal Build
+
+This branch builds from a local ../sdk repo so you'll need to clone the sdk as a sister directory to this one. I've added a Makefile so building looks something like:
+
+```bash
+$ make SUFFIX=v0.5.1-acnodal0 image install
+```
+
+You can run `make` with no arguments to get a list of goals and variables.
+
 # Build
 
 ## Build cmd binary locally
