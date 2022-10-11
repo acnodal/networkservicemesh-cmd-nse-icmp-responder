@@ -7,6 +7,7 @@ RUN wget --no-verbose --output-document=- https://github.com/spiffe/spire/releas
 
 FROM go as build
 COPY ./build-tmp/sdk/ /sdk
+COPY ./build-tmp/sdk-k8s/ /sdk-k8s
 WORKDIR /build
 COPY go.mod go.sum ./
 COPY internal ./internal

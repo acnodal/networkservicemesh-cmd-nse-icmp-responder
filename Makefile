@@ -22,6 +22,7 @@ image:
 	mkdir -p build-tmp
 	rm -rf build-tmp/*
 	cp -r ../sdk build-tmp/
+	cp -r ../sdk-k8s build-tmp/
 	docker build -t ${IMAGE} .
 
 install:

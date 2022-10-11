@@ -3,6 +3,7 @@ module github.com/networkservicemesh/cmd-nse-icmp-responder
 go 1.18
 
 replace github.com/networkservicemesh/sdk => ../sdk
+replace github.com/networkservicemesh/sdk-k8s => ../sdk-k8s
 
 require (
 	github.com/antonfisher/nested-logrus-formatter v1.3.1
